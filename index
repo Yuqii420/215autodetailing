@@ -1176,13 +1176,13 @@
                       <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                     </svg>
                   </div>
-                  <p class="text-muted-foreground">"Enter Here"</p>
+                  <p class="text-muted-foreground">"215 Auto Detailing transformed my car! It looks better than when I first bought it. Highly recommend their premium package."</p>
                   <div class="flex items-center gap-2">
                     <div class="rounded-full bg-muted p-1">
                       <span class="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground">S</span>
                     </div>
                     <div>
-                      <p class="text-sm font-medium leading-none">Name</p>
+                      <p class="text-sm font-medium leading-none">Sarah Johnson</p>
                       <p class="text-xs text-muted-foreground">Verified Customer</p>
                     </div>
                   </div>
@@ -1211,13 +1211,13 @@
                       <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                     </svg>
                   </div>
-                  <p class="text-muted-foreground">"Enter Testimonial"</p>
+                  <p class="text-muted-foreground">"I've been taking my vehicles to 215 Auto Detailing for years. Their attention to detail is unmatched and the staff is always professional."</p>
                   <div class="flex items-center gap-2">
                     <div class="rounded-full bg-muted p-1">
                       <span class="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground">M</span>
                     </div>
                     <div>
-                      <p class="text-sm font-medium leading-none">Name</p>
+                      <p class="text-sm font-medium leading-none">Michael Rodriguez</p>
                       <p class="text-xs text-muted-foreground">Verified Customer</p>
                     </div>
                   </div>
@@ -1246,13 +1246,13 @@
                       <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                     </svg>
                   </div>
-                  <p class="text-muted-foreground">"Enter Testimonial"</p>
+                  <p class="text-muted-foreground">"After 215 Auto Detailing worked on my SUV, I couldn't believe it was the same vehicle. Worth every penny for the ultimate package!"</p>
                   <div class="flex items-center gap-2">
                     <div class="rounded-full bg-muted p-1">
                       <span class="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground">J</span>
                     </div>
                     <div>
-                      <p class="text-sm font-medium leading-none">Name</p>
+                      <p class="text-sm font-medium leading-none">Jennifer Williams</p>
                       <p class="text-xs text-muted-foreground">Verified Customer</p>
                     </div>
                   </div>
