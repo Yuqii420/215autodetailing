@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>215 Auto Detailing - Professional Car Detailing Services</title>
+  <meta name="description" content="Professional auto detailing services that bring your vehicle back to showroom condition. Call 256-457-3625 to book an appointment.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset and base styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 222.2 84% 4.9%;
+      --card: 0 0% 100%;
+      --card-foreground: 222.2 84% 4.9%;
+      --popover: 0 0% 100%;
+      --popover-foreground: 222.2 84% 4.9%;
+      --primary: 221.2 83.2% 53.3%;
+      --primary-foreground: 210 40% 98%;
+      --secondary: 210 40% 96.1%;
+      --secondary-foreground: 222.2 47.4% 11.2%;
+      --muted: 210 40% 96.1%;
+      --muted-foreground: 215.4 16.3% 46.9%;
+      --accent: 210 40% 96.1%;
+      --accent-foreground: 222.2 47.4% 11.2%;
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
+      --border: 214.3 31.8% 91.4%;
+      --input: 214.3 31.8% 91.4%;
+      --ring: 221.2 83.2% 53.3%;
+      --radius: 0.5rem;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: hsl(var(--foreground));
+      background-color: hsl(var(--background));
+      line-height: 1.5;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+
+    /* Layout */
+    .container {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    @media (min-width: 640px) {
+      .container {
+        padding: 0 2rem;
+      }
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .flex-col {
+      flex-direction: column;
+    }
+
+    .items-center {
+      align-items: center;
+    }
+
+    .items-start {
+      align-items: flex-start;
+    }
+
+    .justify-center {
+      justify-content: center;
+    }
+
+    .justify-between {
+      justify-content: space-between;
+    }
+
+    .gap-1 {
+      gap: 0.25rem;
+    }
+
+    .gap-2 {
+      gap: 0.5rem;
+    }
+
+    .gap-4 {
+      gap: 1rem;
+    }
+
+    .gap-6 {
+      gap: 1.5rem;
+    }
+
+    .gap-8 {
+      gap: 2rem;
+    }
+
+    .grid {
+      display: grid;
+    }
+
+    .grid-cols-1 {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    @media (min-width: 640px) {
+      .sm\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 768px) {
+      .md\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .md\:flex-row {
+        flex-direction: row;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .lg\:grid-cols-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .lg\:grid-cols-4 {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    /* Typography */
+    .text-center {
+      text-align: center;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    .text-sm {
+      font-size: 0.875rem;
+    }
+
+    .text-lg {
+      font-size: 1.125rem;
+    }
+
+    .text-xl {
+      font-size: 1.25rem;
+    }
+
+    .text-2xl {
+      font-size: 1.5rem;
+    }
+
+    .text-3xl {
+      font-size: 1.875rem;
+    }
+
+    @media (min-width: 640px) {
+      .sm\:text-5xl {
+        font-size: 3rem;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .md\:text-4xl {
+        font-size: 2.25rem;
+      }
+
+      .md\:text-xl {
+        font-size: 1.25rem;
+      }
+    }
+
+    .font-medium {
+      font-weight: 500;
+    }
+
+    .font-bold {
+      font-weight: 700;
+    }
+
+    /* Spacing */
+    .p-1 {
+      padding: 0.25rem;
+    }
+
+    .p-4 {
+      padding: 1rem;
+    }
+
+    .p-6 {
+      padding: 1.5rem;
+    }
+
+    .p-8 {
+      padding: 2rem;
+    }
+
+    .px-3 {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+
+    .px-4 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .py-1 {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+    }
+
+    .py-2 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .py-4 {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .py-6 {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .py-8 {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .py-12 {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+
+    @media (min-width: 768px) {
+      .md\:py-8 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      .md\:py-24 {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .lg\:py-32 {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+      }
+    }
+
+    .pt-6 {
+      padding-top: 1.5rem;
+    }
+
+    .mt-1 {
+      margin-top: 0.25rem;
+    }
+
+    .mt-2 {
+      margin-top: 0.5rem;
+    }
+
+    .mt-4 {
+      margin-top: 1rem;
+    }
+
+    .mt-6 {
+      margin-top: 1.5rem;
+    }
+
+    .mt-8 {
+      margin-top: 2rem;
+    }
+
+    .mb-1 {
+      margin-bottom: 0.25rem;
+    }
+
+    .mb-2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .mb-4 {
+      margin-bottom: 1rem;
+    }
+
+    .mb-6 {
+      margin-bottom: 1.5rem;
+    }
+
+    .mr-2 {
+      margin-right: 0.5rem;
+    }
+
+    .ml-2 {
+      margin-left: 0.5rem;
+    }
+
+    /* Components */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      width: 100%;
+      border-bottom: 1px solid hsl(var(--border));
+      background-color: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(8px);
+    }
+
+    .nav-link {
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: hsl(var(--foreground));
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .phone-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: hsl(var(--foreground));
+    }
+
+    .phone-link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--radius);
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background-color: hsl(var(--primary));
+      color: hsl(var(--primary-foreground));
+      border: 1px solid transparent;
+    }
+
+    .btn-primary:hover {
+      background-color: hsl(var(--primary) / 0.9);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      color: hsl(var(--foreground));
+      border: 1px solid hsl(var(--border));
+    }
+
+    .btn-outline:hover {
+      background-color: hsl(var(--muted));
+      border-color: hsl(var(--foreground));
+    }
+
+    .btn-lg {
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+    }
+
+    .card {
+      background-color: hsl(var(--card));
+      border-radius: var(--radius);
+      border: 1px solid hsl(var(--border));
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+      padding: 1.5rem 1.5rem 0 1.5rem;
+    }
+
+    .card-primary-header {
+      background-color: hsl(var(--primary));
+      color: hsl(var(--primary-foreground));
+      padding: 1.5rem;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+    }
+
+    .card-footer {
+      padding: 1.5rem;
+      border-top: 1px solid hsl(var(--border));
+    }
+
+    .badge {
+      display: inline-block;
+      border-radius: var(--radius);
+      background-color: hsl(var(--muted));
+      padding: 0.25rem 0.75rem;
+      font-size: 0.875rem;
+    }
+
+    .section {
+      width: 100%;
+    }
+
+    .section-muted {
+      background-color: hsl(var(--muted));
+    }
+
+    .section-muted-50 {
+      background-color: hsl(var(--muted) / 0.5);
+    }
+
+    .section-gradient {
+      background: linear-gradient(to bottom, hsl(var(--muted) / 0.5), hsl(var(--muted)));
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .feature-icon {
+      color: hsl(var(--primary));
+    }
+
+    .tab-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .tab {
+      background-color: transparent;
+      border: 1px solid hsl(var(--border));
+      border-radius: var(--radius);
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    .tab.active {
+      background-color: hsl(var(--primary));
+      color: hsl(var(--primary-foreground));
+      border-color: hsl(var(--primary));
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    @media (min-width: 640px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 768px) {
+      .gallery-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .gallery-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      border-radius: var(--radius);
+      position: relative;
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover .gallery-img {
+      transform: scale(1.05);
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-input {
+      width: 100%;
+      height: 2.5rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius);
+      border: 1px solid hsl(var(--input));
+      background-color: hsl(var(--background));
+      font-size: 0.875rem;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: hsl(var(--ring));
+      box-shadow: 0 0 0 2px hsl(var(--ring) / 0.3);
+    }
+
+    .form-textarea {
+      width: 100%;
+      min-height: 100px;
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius);
+      border: 1px solid hsl(var(--input));
+      background-color: hsl(var(--background));
+      font-size: 0.875rem;
+      resize: vertical;
+    }
+
+    .form-textarea:focus {
+      outline: none;
+      border-color: hsl(var(--ring));
+      box-shadow: 0 0 0 2px hsl(var(--ring) / 0.3);
+    }
+
+    .form-select {
+      width: 100%;
+      height: 2.5rem;
+      padding: 0.5rem 0.75rem;
+      border-radius: var(--radius);
+      border: 1px solid hsl(var(--input));
+      background-color: hsl(var(--background));
+      font-size: 0.875rem;
+    }
+
+    .form-select:focus {
+      outline: none;
+      border-color: hsl(var(--ring));
+      box-shadow: 0 0 0 2px hsl(var(--ring) / 0.3);
+    }
+
+    .social-icon {
+      color: hsl(var(--muted-foreground));
+      transition: color 0.2s;
+    }
+
+    .social-icon:hover {
+      color: hsl(var(--foreground));
+    }
+
+    .w-full {
+      width: 100%;
+    }
+
+    .max-w-md {
+      max-width: 28rem;
+    }
+
+    .max-w-5xl {
+      max-width: 64rem;
+    }
+
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .rounded-sm {
+      border-radius: 0.25rem;
+    }
+
+    .rounded-lg {
+      border-radius: var(--radius);
+    }
+
+    .rounded-full {
+      border-radius: 9999px;
+    }
+
+    .border {
+      border: 1px solid hsl(var(--border));
+    }
+
+    .border-t {
+      border-top: 1px solid hsl(var(--border));
+    }
+
+    .border-primary {
+      border-color: hsl(var(--primary));
+    }
+
+    .bg-primary {
+      background-color: hsl(var(--primary));
+    }
+
+    .bg-muted {
+      background-color: hsl(var(--muted));
+    }
+
+    .text-primary {
+      color: hsl(var(--primary));
+    }
+
+    .text-primary-foreground {
+      color: hsl(var(--primary-foreground));
+    }
+
+    .text-muted-foreground {
+      color: hsl(var(--muted-foreground));
+    }
+
+    .text-yellow-500 {
+      color: #eab308;
+    }
+
+    .h-4 {
+      height: 1rem;
+    }
+
+    .h-5 {
+      height: 1.25rem;
+    }
+
+    .h-8 {
+      height: 2rem;
+    }
+
+    .w-4 {
+      width: 1rem;
+    }
+
+    .w-5 {
+      width: 1.25rem;
+    }
+
+    .w-8 {
+      width: 2rem;
+    }
+
+    .w-fit {
+      width: fit-content;
+    }
+
+    .space-y-2 > * + * {
+      margin-top: 0.5rem;
+    }
+
+    .space-y-4 > * + * {
+      margin-top: 1rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @media (min-width: 640px) {
+      .sm\:inline {
+        display: inline;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .md\:flex {
+        display: flex;
+      }
+    }
+
+    /* Mobile menu */
+    .mobile-menu-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.5rem;
+      height: 2.5rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 4rem;
+      left: 0;
+      right: 0;
+      background-color: hsl(var(--background));
+      border-bottom: 1px solid hsl(var(--border));
+      padding: 1rem;
+      z-index: 40;
+    }
+
+    .mobile-menu.open {
+      display: block;
+    }
+
+    .mobile-menu-link {
+      display: block;
+      padding: 0.75rem 0;
+      font-size: 1rem;
+      font-weight: 500;
+      text-decoration: none;
+      color: hsl(var(--foreground));
+      border-bottom: 1px solid hsl(var(--border));
+    }
+
+    .mobile-menu-link:last-child {
+      border-bottom: none;
+    }
+
+    @media (min-width: 768px) {
+      .mobile-menu-button {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="flex flex-col min-h-screen">
+    <!-- Header -->
+    <header class="header">
+      <div class="container flex items-center justify-between py-4" style="height: 4rem;">
+        <div class="flex items-center gap-2">
+          <img src="https://via.placeholder.com/32" alt="215 Auto Detailing Logo" width="32" height="32" class="rounded-sm">
+          <span class="text-xl font-bold">215 Auto Detailing</span>
+        </div>
+        <nav class="hidden md:flex gap-6">
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="#testimonials" class="nav-link">Testimonials</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="flex items-center gap-4">
+          <a href="tel:256-457-3625" class="phone-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <span class="hidden sm:inline">256-457-3625</span>
+          </a>
+          <a href="#contact" class="btn btn-primary hidden md:flex">Book Now</a>
+        </div>
+        <button class="mobile-menu-button" aria-label="Toggle menu" id="mobile-menu-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu">
+        <a href="#services" class="mobile-menu-link">Services</a>
+        <a href="#about" class="mobile-menu-link">About</a>
+        <a href="#gallery" class="mobile-menu-link">Gallery</a>
+        <a href="#testimonials" class="mobile-menu-link">Testimonials</a>
+        <a href="#contact" class="mobile-menu-link">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="section section-gradient py-12 md:py-24 lg:py-32">
+        <div class="container px-4">
+          <div class="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+            <div class="flex flex-col justify-center space-y-4">
+              <div class="space-y-2">
+                <h1 class="text-3xl font-bold sm:text-5xl">Professional Auto Detailing Services</h1>
+                <p class="text-muted-foreground md:text-xl">
+                  Restore your vehicle's showroom shine with our premium detailing services. Expert care for every vehicle.
+                </p>
+              </div>
+              <div class="flex flex-col gap-2 sm:flex-row">
+                <a href="#contact" class="btn btn-primary btn-lg">Book Appointment</a>
+                <a href="tel:256-457-3625" class="btn btn-outline btn-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2 h-4 w-4">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  Call 256-457-3625
+                </a>
+              </div>
+            </div>
+            <img src="https://via.placeholder.com/550x550" alt="Car being detailed" class="mx-auto rounded-xl object-cover sm:w-full">
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="section py-12 md:py-24 lg:py-32">
+        <div class="container px-4">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <div class="space-y-2">
+              <div class="badge">Services</div>
+              <h2 class="text-3xl font-bold md:text-4xl">Our Detailing Packages</h2>
+              <p class="text-muted-foreground md:text-xl max-w-5xl mx-auto">
+                Choose from our range of professional detailing services tailored to your vehicle's needs.
+              </p>
+            </div>
+          </div>
+          <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3 lg:gap-8 mt-8">
+            <!-- Basic Wash Card -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="text-xl font-bold mb-1">Basic Wash</h3>
+                <p class="text-muted-foreground">Essential cleaning for your vehicle</p>
+              </div>
+              <div class="card-content grid gap-4">
+                <div class="text-2xl font-bold">$49.99</div>
+                <div class="grid gap-2">
+                  <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon h-4 w-4">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Exterior hand wash</span>
+                  </div>
+                  <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon h-4 w-4">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Wheel cleaning</span>
+                  </div>
+                  <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon h-4 w-4">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Tire dressing</span>
+                  </div>
+                  <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon h-4 w-4">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Windows cleaning</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="tel:256-457-3625" class="btn btn-primary w-full">Book Now</a>
+              </div>
+            </div>
+
+            <!-- Premium Detail Card -->
+            <div class="card border-primary">
+              <div class="card-primary-header">
+                <h3 class="text-xl font-bold mb-1">Premium Detail</h3>
+                <p class="text-primary-foreground" style="opacity: 0.9;">Our most popular package</p>
+              </div>
+              <div class="card-content grid gap-4 pt-6">
+                <div class="text-2xl font-bold">$129.99</div>
+                <div class="grid gap-2">
+                  <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon h-4 w-4">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Everything in Basic Wash</span>
+                  </div>
+                  <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon h-4 w-4">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Interior vacuum & wipe down</span>
+                  </div>
+                  <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon h-4 w-4">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Dashboard & console cleaning</span>
+                  </div>
+                  <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon h-4 w-4">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Leather conditioning</span>
+                  </div>
+                  <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon h-4 w-4">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Wax protection</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="tel:256-457-3625" class="btn btn-primary w-full">Book Now</a>
+              </div>
+            </div>
+
+            <!-- Ultimate Detail Card -->
+            <div class="card">
+              <div class="card-header">
+                <h3 class="text-xl font-bold mb-1">Ultimate Detail</h3>
+                <p class="text-muted-foreground">Complete transformation</p>
+              </div>
+              <div class="card-content grid gap-4">
+                <div class="text-2xl font-bold">$249.99</div>
+                <div class="grid gap-2">
+                  <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon h-4 w-4">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Everything in Premium Detail</span>
+                  </div>
+                  <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon h-4 w-4">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Clay bar treatment</span>
+                  </div>
+                  <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon h-4 w-4">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Paint correction</span>
+                  </div>
+                  <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon h-4 w-4">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Ceramic coating</span>
+                  </div>
+                  <div class="feature-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feature-icon h-4 w-4">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                    <span>Engine bay cleaning</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                <a href="tel:256-457-3625" class="btn btn-primary w-full">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section section-muted py-12 md:py-24 lg:py-32">
+        <div class="container px-4">
+          <div class="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+            <img src="https://via.placeholder.com/600x400" alt="215 Auto Detailing Team" class="mx-auto rounded-xl object-cover sm:w-full">
+            <div class="flex flex-col justify-center space-y-4">
+              <div class="space-y-2">
+                <h2 class="text-3xl font-bold md:text-4xl">About 215 Auto Detailing</h2>
+                <p class="text-muted-foreground md:text-xl">
+                  With over 10 years of experience, 215 Auto Detailing has been providing exceptional car care
+                  services to our community. We take pride in our attention to detail and commitment to customer
+                  satisfaction.
+                </p>
+              </div>
+              <div class="grid gap-4 md:grid-cols-2">
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-xl font-bold">Our Mission</h3>
+                  <p class="text-muted-foreground">
+                    To provide the highest quality auto detailing services that exceed our customers' expectations.
+                  </p>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-xl font-bold">Our Promise</h3>
+                  <p class="text-muted-foreground">
+                    We use only premium products and techniques to ensure your vehicle receives the best care
+                    possible.
+                  </p>
+                </div>
+              </div>
+              <a href="#contact" class="btn btn-outline w-fit">
+                Contact Us
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="section py-12 md:py-24 lg:py-32">
+        <div class="container px-4">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <div class="space-y-2">
+              <h2 class="text-3xl font-bold md:text-4xl">Our Work</h2>
+              <p class="text-muted-foreground md:text-xl max-w-5xl mx-auto">
+                See the transformation we can bring to your vehicle.
+              </p>
+            </div>
+          </div>
+          <div class="mt-8">
+            <div class="tab-list">
+              <button class="tab active" data-tab="all">All</button>
+              <button class="tab" data-tab="exterior">Exterior</button>
+              <button class="tab" data-tab="interior">Interior</button>
+              <button class="tab" data-tab="before-after">Before & After</button>
+            </div>
+            <div class="tab-content active" id="tab-all">
+              <div class="gallery-grid">
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Gallery+Image+1" alt="Gallery image 1" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Gallery+Image+2" alt="Gallery image 2" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Gallery+Image+3" alt="Gallery image 3" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Gallery+Image+4" alt="Gallery image 4" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Gallery+Image+5" alt="Gallery image 5" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Gallery+Image+6" alt="Gallery image 6" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Gallery+Image+7" alt="Gallery image 7" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Gallery+Image+8" alt="Gallery image 8" class="gallery-img">
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" id="tab-exterior">
+              <div class="gallery-grid">
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Exterior+1" alt="Exterior image 1" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Exterior+2" alt="Exterior image 2" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Exterior+3" alt="Exterior image 3" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Exterior+4" alt="Exterior image 4" class="gallery-img">
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" id="tab-interior">
+              <div class="gallery-grid">
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Interior+1" alt="Interior image 1" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Interior+2" alt="Interior image 2" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Interior+3" alt="Interior image 3" class="gallery-img">
+                </div>
+                <div class="gallery-item">
+                  <img src="https://via.placeholder.com/400x300?text=Interior+4" alt="Interior image 4" class="gallery-img">
+                </div>
+              </div>
+            </div>
+            <div class="tab-content" id="tab-before-after">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="grid grid-cols-2 gap-2">
+                  <div class="overflow-hidden rounded-lg">
+                    <img src="https://via.placeholder.com/400x300?text=Before+1" alt="Before image 1" class="w-full h-auto object-cover">
+                    <p class="text-center mt-1 font-medium">Before</p>
+                  </div>
+                  <div class="overflow-hidden rounded-lg">
+                    <img src="https://via.placeholder.com/400x300?text=After+1" alt="After image 1" class="w-full h-auto object-cover">
+                    <p class="text-center mt-1 font-medium">After</p>
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                  <div class="overflow-hidden rounded-lg">
+                    <img src="https://via.placeholder.com/400x300?text=Before+2" alt="Before image 2" class="w-full h-auto object-cover">
+                    <p class="text-center mt-1 font-medium">Before</p>
+                  </div>
+                  <div class="overflow-hidden rounded-lg">
+                    <img src="https://via.placeholder.com/400x300?text=After+2" alt="After image 2" class="w-full h-auto object-cover">
+                    <p class="text-center mt-1 font-medium">After</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="section section-muted-50 py-12 md:py-24 lg:py-32">
+        <div class="container px-4">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <div class="space-y-2">
+              <h2 class="text-3xl font-bold md:text-4xl">What Our Customers Say</h2>
+              <p class="text-muted-foreground md:text-xl max-w-5xl mx-auto">
+                Don't just take our word for it. Here's what our satisfied customers have to say.
+              </p>
+            </div>
+          </div>
+          <div class="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3 lg:gap-8 mt-8">
+            <!-- Testimonial 1 -->
+            <div class="card text-left">
+              <div class="card-content">
+                <div class="flex flex-col gap-4">
+                  <div class="flex items-center gap-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-yellow-500">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-yellow-500">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-yellow-500">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-yellow-500">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-yellow-500">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                  </div>
+                  <p class="text-muted-foreground">"215 Auto Detailing transformed my car! It looks better than when I first bought it. Highly recommend their premium package."</p>
+                  <div class="flex items-center gap-2">
+                    <div class="rounded-full bg-muted p-1">
+                      <span class="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground">S</span>
+                    </div>
+                    <div>
+                      <p class="text-sm font-medium leading-none">Sarah Johnson</p>
+                      <p class="text-xs text-muted-foreground">Verified Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="card text-left">
+              <div class="card-content">
+                <div class="flex flex-col gap-4">
+                  <div class="flex items-center gap-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-yellow-500">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-yellow-500">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-yellow-500">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-yellow-500">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-yellow-500">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                  </div>
+                  <p class="text-muted-foreground">"I've been taking my vehicles to 215 Auto Detailing for years. Their attention to detail is unmatched and the staff is always professional."</p>
+                  <div class="flex items-center gap-2">
+                    <div class="rounded-full bg-muted p-1">
+                      <span class="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground">M</span>
+                    </div>
+                    <div>
+                      <p class="text-sm font-medium leading-none">Michael Rodriguez</p>
+                      <p class="text-xs text-muted-foreground">Verified Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="card text-left">
+              <div class="card-content">
+                <div class="flex flex-col gap-4">
+                  <div class="flex items-center gap-0.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-yellow-500">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-yellow-500">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-yellow-500">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-yellow-500">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5 text-yellow-500">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                    </svg>
+                  </div>
+                  <p class="text-muted-foreground">"After 215 Auto Detailing worked on my SUV, I couldn't believe it was the same vehicle. Worth every penny for the ultimate package!"</p>
+                  <div class="flex items-center gap-2">
+                    <div class="rounded-full bg-muted p-1">
+                      <span class="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-primary-foreground">J</span>
+                    </div>
+                    <div>
+                      <p class="text-sm font-medium leading-none">Jennifer Williams</p>
+                      <p class="text-xs text-muted-foreground">Verified Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section py-12 md:py-24 lg:py-32">
+        <div class="container px-4">
+          <div class="grid gap-6 lg:grid-cols-2 lg:gap-12 items-start">
+            <div class="flex flex-col justify-center space-y-4">
+              <div class="space-y-2">
+                <h2 class="text-3xl font-bold md:text-4xl">Contact Us</h2>
+                <p class="text-muted-foreground md:text-xl">
+                  Have questions or ready to book an appointment? Reach out to us.
+                </p>
+              </div>
+              <div class="grid gap-4">
+                <div class="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary h-5 w-5">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A
